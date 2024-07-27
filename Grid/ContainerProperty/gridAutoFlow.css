@@ -1,0 +1,11 @@
+.container{
+    grid-template-columns: 100px 300px 50px 100px 10px;
+    grid-auto-flow: column;
+    /* gap: 100px; */
+    /* grid-template: 100px/500px; */
+    border: black;
+}
+
+.item{
+    border: 1px solid black;
+}

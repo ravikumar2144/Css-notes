@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="transition.css" /> -->
+    <style>
+      /* transition */
+      .trans {
+        width: 200px;
+        margin: 100px;
+        animation: anim 3s linear infinite;
+      }
+      @keyframes anim {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .trans:hover {
+        /* width: 300px; */
+        transform: scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="trans"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVrEWoR0mmSTQycwl-rW5b-i1xHjKYXM-mtQ&usqp=CAU"
+      alt=""
+    />
+  </body>
+</html>

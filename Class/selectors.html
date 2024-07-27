@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* Pseudo-classes and Pseudo-elements */
+        *{
+            background-color: khaki;
+        }
+
+        p,h1 {
+            font-weight: bold;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">CSS Selectors Example</h1>
+    <p>This is a paragraph with blue text.</p>
+    <p class="highlight">This paragraph has a yellow background.</p>
+    <div>
+        <p>This paragraph is styled with italic text.</p>
+    </div>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+    <h2>Subtitle</h2>
+    <p>This paragraph has a margin-top because it's an adjacent sibling of an h2 element.</p>
+    <input type="text" placeholder="Enter your name">
+    <a href="#">Hover over me</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+p{
+    text-shadow: 3px 3px yellow;
+    text-indent: 40px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+div{
+    font-family: serif ;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning Example</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        margin: 100px;
+        position: relative;
+      }
+
+      .box {
+        width: 100px;
+        height: 110px;
+        background-color: skyblue;
+        top: 0;
+        position: absolute;
+      }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+      <div class="box1">Box1</div>
+    </div>
+  </body>
+</html>

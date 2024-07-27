@@ -1,0 +1,7 @@
+.ul{
+    list-style-type: square;
+    list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8umIiCU_K6ac-xS-ni4y6SP7XAd8C7Ms3Q&usqp=CAU");
+}
+.ol{
+    list-style-type: upper-roman;
+}

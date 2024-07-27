@@ -1,0 +1,422 @@
+CSS  -  Cascading Style Sheet
+
+3 types
+	
+	InlineCSS  :	
+		
+		<p style="color: red">
+	
+	InternalCSS(index.html)  :	
+		
+		<html>
+		<head>
+			<style>
+			.para			-- selector
+				{           -- declaration
+ 				color:red;	-- property:value
+				}		
+			h1{color : red} 
+		       // property : value
+			</style>
+		</head>
+		<body>
+		<p class="para"> Paragraph </p>
+		<h1></h1>
+		</body>
+		</html>
+	
+	ExternalCSS(style.css) :
+
+		Using <link> to link the .css to .html
+		
+		p{color:red;}
+		
+		
+CSS Syntax :
+
+selector {
+    property: value;
+    property: value;
+}
+
+
+Selector
+
+	Element selector    -->	 tags(h1,p,span)	
+	
+	class selector      -->  .classname{}
+	
+	Id selector	    	-->  #name   (Used for unique purpose)
+								<p id="name">Paragraph</p>
+	
+	Universal selector  -->   *{}    (Used for whole page)
+
+	Grouping selector   -->   tag,tag{}      Eg:   p,h1{}
+
+
+
+
+
+Background style
+	
+	property              : value
+	
+	background-color      : red 
+	background-image      : url("image path")
+	background-repeat     : repeat/no repeat/repeat-x/repeat-y
+	background-attachment : fixed (Image will be fixed only the content will move)
+	background-position   : top/bottom/center/right/left
+	background  		  : color image repeat attachment position  -->  black url("") repeat fixed top
+
+
+Border style
+
+		property		  :  value
+
+		border-style		  :  none/dotted/solid/dashed/double/groove/ridge/inset/outset/hidden     -->   border-style : top right bottom left
+	
+		border-color		  :  color
+	
+		border-radius		  :  3px(topleft)   3px(topright)   3px(bottomright)   3px(bottomleft)  -->   3px 0 3px 0
+						   	  :	 3px(topleft , bottomright)    3px(topright , bottomleft)	 		  -->   3px 3px
+						      :	 3px(topleft)   3px(topright , bottomleft)   3px(bottomright)       -->   3px 3px 3px
+   	  border-top-left-radius  :  3px 
+  	  border-top-right-radius :  3px
+	border-bottom-left-radius :  3px
+   	border-bottom-right-radius :  3px
+	
+	    border-width        :  3px/thin/thick/medium
+				:  top,bottom  right,left	   -->   3px 3px
+				:  top,left    right    bottom     -->   3px 3px 3px 
+	
+	border-collapse		  	  :  seperate/collapse/inherit/initial
+	
+	border-spacing		  	  :  3px		
+							  :  3px 3px     horizontal/vertical
+							  
+
+				border 		  : borderwidth borderstyle bordercolor     -->  3px solid black
+
+
+Measurement Units :
+
+		1. Absolute Units   -->  px,cm,mm,in(inch),pt(point)   --> Cannot change according to the device
+
+		2. Relative Units	-->  em,rem,vw(viewport width),vh(viewport height),vmin,vmax
+
+
+Display :
+
+		display : inline/block/inline-block/table/table-row/table-cell/flex/grid/none
+		visibility : hidden     -->   space will show instead of content that we written in the tag
+		display : none          -->   space also be erased
+
+ 
+GRID : Two dimensional	    -->  set row nd column at a time
+
+
+Margin & Padding:
+
+	To make space inside    ->   padding : 30px;         -->    padding : top right bottom left
+	
+	To make space outside   ->   margin : 30px           -->    margin : top right bottom left
+	
+
+Text property :
+
+		Text color  ->   color : red;
+	 Textalignment  ->   text-align : left/right/center;
+	Text decoration ->   text-decoration : underline/line-through/overline/none
+Text transformation ->   text-transform : uppercase/lowercase/capitalize
+	Text spacing :
+					text-indent :  100px;
+					word-spacing :	30px/-30px;
+					letter-spacing :  30px;
+					line-height :	0.8;
+		Text shadow  ->   text-shadow : horizontal vertical color    -->  2px 3px red
+
+Font property :
+
+		font-family :	arial serif/san-serif;    'Times New Roman' serif;
+		font-size	:	30px;
+		font-style	:	italic,bold,normal;
+
+
+List style property :
+
+		<ol> -->     list-style-type : upper-Roman/lower-alpha 
+		<ul> --> 	 list-style-type : circle/square/none
+
+		list-style-image : url("");	
+
+
+Combinators :
+
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS:
+
+		1. Descendant selector     	  -->  div p{}    ==>   apply all p inside the div tag
+		2. Adjacent sibling selector  -->  div+p{}    ==>   apply p other than div tag
+		3. Child selector 			  -->  div>p{}  ==>   apply p after the div tag 
+		4. General sibling selector   -->  div~p{}  ==>   apply  all p after div 
+
+	descendant selector (space)
+	child selector (>)
+	adjacent sibling selector (+)
+	general sibling selector (~) 
+
+Pseudo elemets :   -->   ' :: '  --  Styling for particular word/line
+
+		tagname :: first-letter{
+			color:red;
+		}
+
+		tagname :: first-line{
+			color:red;
+		}
+
+		tagname :: first-before{
+			color:red;
+		}
+
+		tagname :: first-after{
+			color:red;
+		}
+
+Pseudo classes :   -->   ' : '
+
+
+		tagname : hover{}
+		tagname : active{}	 -->  when clicked
+		tagname : link{}     -->  before visit
+		tagname : visited{}	 -->  after visit
+
+Opacity :		(0.1 - 1.0)
+
+
+		property 	:  Value
+
+		opacity 	:  0.1;
+
+Flex :
+
+	FLEX : Single dimensional   -->  set either row/column
+
+		
+
+Flex container properties :
+
+		property	:	Value
+
+	flex-direction  :   row/column/row-reverse/column-reverse   -->  used within container
+
+	flex-wrap 		:	wrap/nowrap/wrap-reverse
+	 
+	justify-content :	flex-start/flex-end/center/space-between/space-around/space-evenly
+
+		gap:30px  ,  row-gap:30px  ,  column-gap:30px
+
+	align-items	 	:	flexstart/flex-end/center/stretch/baseline
+
+
+Flex cross-axis properties :
+
+	align-content 	:	flex-start/flex-end/center/stretch/baseline/space-around/space-between/space-evenly  (flex-wrap : wrap  is must)
+
+
+Flex item properties :
+
+	.classname:nth-child()
+				order : value
+
+    align-self   :  flexstart/flexend/center/stretch/baseline  
+
+	flex-grow    : 3    --> larger than other items 	
+
+	flex-shrink  : 3	--> shrinks fast (Width is must to see the diff) 
+	   
+	flex-basis   : 30px
+
+
+Flex shorthand properties :
+
+	     flex     : flex-grow flux-shrink flex-basis
+	
+	placecontent  :  align-content justify-content
+
+	flex-flow	  :	 flex-direction flex-wrap
+
+
+**************************************************************************************************
+
+
+Grid   -->   Multidimension (set Row and Column)
+
+		display : grid;
+
+		grid-template-column(width);
+		grid-template-row(height);
+
+
+		grid-template : 100px/100px;		-->    grid-template : row/column
+
+		gap : 100px
+
+Container properties :
+
+		justify-items : start/end/center/stretch      (Column)
+
+		align-items : start/end/center/stretch			
+
+	*** place-items : align-items justify-items    -->   start end
+
+
+		grid-auto-flow : row/Column
+
+		grid-auto-row : 30px
+
+		grid-auto-column : 30px
+
+
+Item properties :
+
+		grid-column-start : 1;            **Connecting edges**
+		grid-column-end   : 3;
+
+	 ***grid-column : start/end    -->  1/3
+
+
+	 	grid-row-start : 1;            **Connecting edges**
+		grid-row-end   : 3;
+
+	 ***grid-row : start/end    -->  1/3
+
+
+	 	align-self : start/end/center/stretch		(gridtemplatecolumn must)
+		justify-self : start/end/center/stretch     (Stretch default  ,  Height must)
+
+
+************************************************************************
+
+POSITION :
+
+	Property	: 	Value         ->    left,right,up,down 
+
+	position	: 	static
+	position	: 	relative      -->  move within a container
+	position	: 	Absolute	  -->  move outside of the container
+	position	: 	fixed	     
+	position	: 	sticky        
+
+
+FLOAT :
+
+	float : left/right
+	clear : right/left/both
+
+
+BOX Sizing :
+
+		*{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            padding: 50px;
+        }
+
+
+Z -index :
+
+		Higher number shows first
+
+Outline :
+
+		outline-width : 3px;
+		outline-style : 3px;
+		outline-color : red;
+		outline-offset : 3px;
+	
+	***outline : width style color
+
+Overflow :
+
+		overflow : scroll/scroll-x/scroll-y
+		overflow : visible
+		overflow : hidden
+
+
+Filter :
+
+		filter : blur(30px);
+		filter : brightness(20%);
+		filter : grayscale(20%);
+		filter : opacity(0.1-1);
+		filter : dropshadow(3px color)
+
+
+
+Media Query :
+
+	Syntax  :	 @media not/only mediatype and (expression)
+					{
+						css code
+					} 
+					
+
+			mediatype :  all/screen/print/speech
+
+			expression : 			   Max value
+							desktop =>  1200px
+							tablet  =>  768px
+							mobile  =>  512px 
+
+
+TRANSFORM :
+
+		transform : translateX(500px)
+		transform : translateY(500px)
+		transform : translate(500px,500px)
+
+		transform : rotateX(60deg)
+		transform : rotateY(60deg)
+		transform : rotateZ(60deg)
+		transform : rotate(60deg)
+
+		transform : scaleX(1.5)
+		transform : scaleY(1.5)
+		transform : scale(1.5)
+
+
+
+TRANSITION :
+
+		transition-delay :  3s   (seconds/miliseconds)
+		transition-duration : 3s   (seconds/miliseconds)
+		transition-property :
+		transition-timing-function : linear/ease/ease-in/ease-in-out
+
+		transition : property duration timing-function delay
+
+
+
+******************************************************
+
+background-image :url("");
+background-size : 300px 300px;   -->  height width
+
+
+Animation : KEYFRAME
+ 
+	animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode

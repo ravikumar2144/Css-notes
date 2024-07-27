@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+        background-color: black;
+        /* flex-direction: column-reverse; */
+        align-content: center;
+        /* gap: 570px; */
+        /* flex-wrap: wrap-reverse; */
+        /* justify-content: start; */
+        /* align-items: end; */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      @media only screen and (max-width: 800px) {
+        .green {
+          /* grid-template-columns: auto auto; */
+          background-color: aqua;
+        }
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red">1</div>
+      <div class="box green">2</div>
+      <div class="box blue">3</div>
+    </div>
+  </body>
+</html>

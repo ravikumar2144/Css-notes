@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        /* @keyframes - set of rules */
+        /* animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation */
+
+        /* animation-direction */
+        
+        /* normal --> forward (default) */
+        /* reverse --> reverse direction(backward) */
+        /* alternate --> forward first then backward */
+        /* alternate-reverse --> backward first , then forward */
+
+
+        /* animation-timing-function */
+
+        /* ease --> slow start ,then fast ,then end slowly */
+        /* linear --> same speed from start to end*/
+        /* ease-in -->  slow start */
+        /* ease-out --> slow end */
+        /* ease-in-out -->slow start and end */
+        /* cubic-bezier(n,n,n,n) --> own values */
+
+        /* animation-fill-mode */
+
+        /* none -->defaultvalue */
+        /* forward--> Last keyframe value */
+        /* backward--> First keyframe value */
+        /* both--> first keyframe to last keyframe */
+
+        /* animation shorthand */
+        
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+        .box{
+            width:300px;
+            height:200px;
+            background-color: cornflowerblue;
+            animation-name:boxcolor;
+            animation-duration: 2s;
+            /* animation-delay: 3s; */
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            /* animation-fill-mode: both; */
+            position: relative;
+            left:20px;
+            top:20px;
+            
+        }
+      
+       
+        @keyframes box-animation {
+            from{background-color: crimson;left:300px}
+            /* from{background-color: crimson;} */
+            to{background-color: aquamarine;}
+        }
+
+ /* from-0% to-100%  (default value)*/
+
+        @keyframes boxcolor {
+            25%{
+                background-color: aqua;
+                left:500px;
+                top:20px;
+            }
+            50%{
+                background-color: blueviolet;
+                left:500px;
+                top:500px;
+            }
+            75%{
+                background-color: yellowgreen;
+                left:20px;
+                top:500px;
+            }
+            100%{
+                background-color: violet;
+                left:20px;
+                top:20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

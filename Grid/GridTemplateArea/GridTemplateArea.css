@@ -1,0 +1,59 @@
+.container{
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 100px 300px 100px 100px;
+    grid-template-areas: "H H H H H" 
+                        "S i1 i1 i1 i1"
+                        "S i2 i2 i3 i3"
+                        "F F F F F";
+    gap: 20px;
+    background-color: red;
+    padding: 20px;
+}
+
+.H{
+    grid-area: H;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+    padding: 35px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.S{
+    grid-area: S;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+}
+
+.i1{
+    grid-area: i1;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+}
+
+.i2{
+    grid-area: i2;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+}
+
+.i3{
+    grid-area: i3;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+}
+
+.F{
+    grid-area: F;
+    background-color: goldenrod;
+    border: 3px solid white;
+    color: aliceblue;
+    padding: 35px;
+    text-align: center;
+    font-size: 20px;
+}

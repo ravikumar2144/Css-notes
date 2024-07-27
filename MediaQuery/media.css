@@ -1,0 +1,22 @@
+div{
+    height: 500px;
+    width: 70%;
+}
+.p{
+    grid-template-columns: auto auto auto auto;
+}
+@media only screen and (max-width:800px) 
+{
+    .p{
+        grid-template-columns: auto auto;
+        background-color: aqua;
+    }
+}
+@media only screen and (max-width:200px) 
+{
+    .p{
+        grid-template-columns: auto;
+        background-color: brown;
+    }
+}
+

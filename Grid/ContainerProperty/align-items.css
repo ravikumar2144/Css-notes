@@ -1,0 +1,9 @@
+.container{
+    align-items: end;
+    background-color: black;
+    height: 700px;
+}
+.item{
+    background-color: yellow;
+    margin: 10px;
+}

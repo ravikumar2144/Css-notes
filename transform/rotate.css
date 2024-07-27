@@ -1,0 +1,7 @@
+.style{
+    /* transform: rotateX(60deg);
+    transform: rotateY(60deg);
+    transform: rotateZ(60deg); */
+    /* transform: rotate(200deg); */
+    transform: rotate3d(0,1,1,90deg);
+}

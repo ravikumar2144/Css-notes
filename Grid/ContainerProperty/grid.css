@@ -1,0 +1,18 @@
+.container{
+    background-color:  yellow;
+    /* grid-template-columns: 4fr 200px repeat(3,1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(3, 30px) 1fr 100px; */
+    /* grid-template-columns: 30px; */
+    /* grid-template-columns: 40px repeat(3,minmax(100px,1fr)) 1fr; */
+    /* grid-template-columns: minmax(500px,1fr); */
+
+    /* grid-template-rows: repeat(5,100px); */
+
+    /* grid-template: repeat(3,200px)/repeat(2,100px) */
+}
+.item   
+{
+    background-color:  red;
+    margin: 10px;
+}

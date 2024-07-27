@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+.main
+{
+    background-color: black;
+    height: 40px; padding: 14px; font-size: 11px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header
+{
+    position: absolute; 
+    top: 40px; width: 500px; height: 30px; left: 550px; 
+    margin-top: 30px;display: flex;
+    justify-content: space-between; font-weight: bold;
+}
+.sub
+{
+    margin-left: 160px;
+    /* background-color: aqua;  */
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.a
+{
+    color: silver;
+    text-decoration: none;
+}
+.a:hover
+{
+    color: white;
+}
+#download
+{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main2
+{
+    background-color: white;
+    height: 80px;
+    box-shadow: 3px 3px 3px rgb(204, 199, 199);
+}
+.sub2
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    position: absolute;
+    top: 30px;
+}
+.b
+{
+    color: black;
+}
+.b:hover
+{
+    color: aqua;
+}
+::placeholder
+{
+    color: white;
+}
+.menu:hover
+{
+    color: aqua;
+}
+.join{
+    box-shadow: 3px 1px 3px 1px rgba(210, 208, 208);
+    text-align: center; background-color: rgb(151,150,240); 
+    width: 80%;height: 50px; border-radius: 15px; 
+    display: flex;align-items: center;
+}
+.join:hover
+{
+    box-shadow: 4px 5px 10px silver;
+}

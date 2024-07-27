@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Example</title>
+<style>
+  .container {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+  }
+
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  /* Just for styling purposes */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    Sticky Header
+  </div>
+  <div class="content">
+    <!-- Long content here to enable scrolling -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo id ligula venenatis maximus. Integer non tristique arcu. In hac habitasse platea dictumst. Mauris nec aliquet velit. Ut suscipit placerat justo, non viverra mi tincidunt ac. Nulla facilisi. Suspendisse ullamcorper, lacus sed aliquam volutpat, odio est facilisis libero, a condimentum justo ex in purus. Sed hendrerit mauris a justo malesuada, at rhoncus urna tincidunt.</p>
+    <!-- More content... -->
+  </div>
+</div>
+</body>
+</html>

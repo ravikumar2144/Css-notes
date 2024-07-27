@@ -1,0 +1,37 @@
+p{
+    font-size: 10px;
+}
+.div{
+    background-color: aqua;
+    width: 50%;
+}
+.div1{
+    background-color: red;
+    width: 100px;
+}
+.table
+{
+    display: table; 
+    width: 30%;
+    height: 150px;
+}
+.row
+{
+    display: table-row;
+}
+.tablecell
+{
+    display: table-cell;
+    border: 1px solid black;
+}
+span{
+    visibility: hidden;
+}
+.none
+{
+    display: none;
+}
+.container
+{
+    display: flex;
+}
